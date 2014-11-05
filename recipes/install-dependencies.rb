@@ -1,4 +1,5 @@
-%w[build-essential pkg-config autogen autoconf libboost-all-dev libssl-dev libprotobuf-dev openssl protobuf-compiler libqt4-dev libqrencode-dev].each do |pkg|
+include_recipe 'build_essential'
+%w[pkg-config autogen libboost-all-dev libssl-dev libprotobuf-dev openssl protobuf-compiler libqt4-dev libqrencode-dev].each do |pkg|
   package pkg do
     action :install
   end
