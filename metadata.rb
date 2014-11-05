@@ -7,3 +7,4 @@ long_description 'Installs/Configures bitcoind'
 version          '0.1.1'
 
 depends 'apt'
+depends 'build-essential'
