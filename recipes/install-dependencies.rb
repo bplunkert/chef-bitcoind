@@ -1,5 +1,5 @@
 include_recipe 'apt'
-include_recipe 'build_essential'
+include_recipe 'build-essential'
 
 %w[pkg-config autogen libboost-all-dev libssl-dev libprotobuf-dev openssl protobuf-compiler libqt4-dev libqrencode-dev].each do |pkg|
   package pkg do
